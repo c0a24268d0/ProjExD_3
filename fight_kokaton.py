@@ -163,7 +163,6 @@ class Score:
         screen.blit(self.img,[100, HEIGHT-50])
 
 
-
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))    
