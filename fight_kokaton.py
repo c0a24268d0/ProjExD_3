@@ -155,6 +155,9 @@ class Score:
         
 
     def update(self, screen: pg.Surface, point: int):
+        """
+        引数1 screen：画面Surface　引数2　point:得点
+        """
         self.s=point
         self.img = self.fonto.render(f"スコア：{self.s}",0,(0,0,255))
         screen.blit(self.img,[100, HEIGHT-50])
@@ -213,7 +216,7 @@ def main():
             beam.update(screen)   
         for bomb in bombs:
             bomb.update(screen)
-        score.update(screen,point)
+        score.update(screen,point)  #スコア表示
         pg.display.update()
         tmr += 1
         clock.tick(50)
