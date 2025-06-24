@@ -163,6 +163,13 @@ class Score:
         screen.blit(self.img,[100, HEIGHT-50])
 
 
+class Explosion:
+    def __init__(self):
+        explosion = pg.image.load("fig/explosion.gif")
+        explosion1 = pg.transform.flip(explosion, True, True)
+
+
+
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
